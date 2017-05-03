@@ -18,7 +18,9 @@
 [![Jest](/img/jest-padded-90.png)](https://facebook.github.io/jest/)
 [![Yarn](/img/yarn-padded-90.png)](https://yarnpkg.com/)
 
-[Electron](http://electron.atom.io/) application boilerplate based on [React](https://facebook.github.io/react/), [Redux](https://github.com/reactjs/redux), [React Router](https://github.com/reactjs/react-router), [Webpack](http://webpack.github.io/docs/), [React Transform HMR](https://github.com/gaearon/react-transform-hmr) for rapid application development
+**Note**: this project is based off [electron-react-boilerplate](https://github.com/https://github.com/chentsulin/electron-react-boilerplate) project. This README is also modified from the boilerplate README but will be changed as I develop the project.
+
+[Electron](http://electron.atom.io/) application based on [React](https://facebook.github.io/react/), [Redux](https://github.com/reactjs/redux), [React Router](https://github.com/reactjs/react-router), [Webpack](http://webpack.github.io/docs/), [React Transform HMR](https://github.com/gaearon/react-transform-hmr).
 
 ## Screenshot
 Coming soon...
