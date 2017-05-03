@@ -4,9 +4,9 @@ import path from 'path';
 
 jasmine.DEFAULT_TIMEOUT_INTERVAL = 15000;
 
-const delay = time => new Promise(resolve => setTimeout(resolve, time));
+const delay = (time) => new Promise((resolve) => setTimeout(resolve, time));
 
-describe('main window', function spec() {
+describe('main window', function spec () {
   beforeAll(async () => {
     this.app = new Application({
       path: electronPath,
@@ -25,7 +25,7 @@ describe('main window', function spec() {
 
   const findButtons = async () => {
     const { value } = await this.app.client.elements('[data-tclass="btn"]');
-    return value.map(btn => btn.ELEMENT);
+    return value.map((btn) => btn.ELEMENT);
   };
 
   it('should open window', async () => {
@@ -41,7 +41,7 @@ describe('main window', function spec() {
     const { client } = this.app;
     const logs = await client.getRenderProcessLogs();
     // Print renderer process logs
-    logs.forEach(log => {
+    logs.forEach((log) => {
       console.log(log.message);
       console.log(log.source);
       console.log(log.level);

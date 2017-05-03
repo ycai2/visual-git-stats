@@ -1,8 +1,12 @@
 {
   "parser": "babel-eslint",
   "parserOptions": {
+    "ecmaVersion": 6,
     "sourceType": "module",
-    "allowImportExportEverywhere": true
+    "ecmaFeatures": {
+      "experimentalObjectRestSpread": true,
+      "jsx": true
+    },
   },
   "extends": "airbnb",
   "env": {
@@ -10,17 +14,18 @@
     "node": true
   },
   "rules": {
-    "arrow-parens": ["off"],
+    "arrow-parens": [2, "always"],
     "compat/compat": "error",
     "consistent-return": "off",
-    "comma-dangle": "off",
-    "flowtype-errors/show-errors": "error",
+    "comma-dangle": 0,
+    "flowtype/space-before-type-colon": [2, "always"],
     "generator-star-spacing": "off",
     "import/no-unresolved": "error",
     "import/no-extraneous-dependencies": "off",
     "no-console": "off",
     "no-use-before-define": "off",
     "no-multi-assign": "off",
+    "no-confusing-arrow": 0,
     "promise/param-names": "error",
     "promise/always-return": "error",
     "promise/catch-or-return": "error",
@@ -30,11 +35,11 @@
     }],
     "react/jsx-no-bind": "off",
     "react/jsx-filename-extension": ["error", { "extensions": [".js", ".jsx"] }],
-    "react/prefer-stateless-function": "off"
+    "react/prefer-stateless-function": "off",
+    "space-before-function-paren": [2, "always"],
   },
   "plugins": [
     "flowtype",
-    "flowtype-errors",
     "import",
     "promise",
     "compat",

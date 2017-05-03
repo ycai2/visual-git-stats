@@ -4,19 +4,19 @@ import type { counterStateType } from '../reducers/counter';
 export const INCREMENT_COUNTER = 'INCREMENT_COUNTER';
 export const DECREMENT_COUNTER = 'DECREMENT_COUNTER';
 
-export function increment() {
+export function increment () {
   return {
     type: INCREMENT_COUNTER
   };
 }
 
-export function decrement() {
+export function decrement () {
   return {
     type: DECREMENT_COUNTER
   };
 }
 
-export function incrementIfOdd() {
+export function incrementIfOdd () {
   return (dispatch: () => void, getState: () => counterStateType) => {
     const { counter } = getState();
 
@@ -28,7 +28,7 @@ export function incrementIfOdd() {
   };
 }
 
-export function incrementAsync(delay: number = 1000) {
+export function incrementAsync (delay: number = 1000) {
   return (dispatch: () => void) => {
     setTimeout(() => {
       dispatch(increment());

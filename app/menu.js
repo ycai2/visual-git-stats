@@ -4,11 +4,11 @@ import { app, Menu, shell, BrowserWindow } from 'electron';
 export default class MenuBuilder {
   mainWindow: BrowserWindow;
 
-  constructor(mainWindow: BrowserWindow) {
+  constructor (mainWindow: BrowserWindow) {
     this.mainWindow = mainWindow;
   }
 
-  buildMenu() {
+  buildMenu () {
     if (process.env.NODE_ENV === 'development' || process.env.DEBUG_PROD === 'true') {
       this.setupDevelopmentEnvironment();
     }
@@ -27,7 +27,7 @@ export default class MenuBuilder {
     return menu;
   }
 
-  setupDevelopmentEnvironment() {
+  setupDevelopmentEnvironment () {
     this.mainWindow.openDevTools();
     this.mainWindow.webContents.on('context-menu', (e, props) => {
       const { x, y } = props;
@@ -43,7 +43,7 @@ export default class MenuBuilder {
     });
   }
 
-  buildDarwinTemplate() {
+  buildDarwinTemplate () {
     const subMenuAbout = {
       label: 'Electron',
       submenu: [
@@ -96,10 +96,10 @@ export default class MenuBuilder {
     const subMenuHelp = {
       label: 'Help',
       submenu: [
-        { label: 'Learn More', click() { shell.openExternal('http://electron.atom.io'); } },
-        { label: 'Documentation', click() { shell.openExternal('https://github.com/atom/electron/tree/master/docs#readme'); } },
-        { label: 'Community Discussions', click() { shell.openExternal('https://discuss.atom.io/c/electron'); } },
-        { label: 'Search Issues', click() { shell.openExternal('https://github.com/atom/electron/issues'); } }
+        { label: 'Learn More', click () { shell.openExternal('http://electron.atom.io'); } },
+        { label: 'Documentation', click () { shell.openExternal('https://github.com/atom/electron/tree/master/docs#readme'); } },
+        { label: 'Community Discussions', click () { shell.openExternal('https://discuss.atom.io/c/electron'); } },
+        { label: 'Search Issues', click () { shell.openExternal('https://github.com/atom/electron/issues'); } }
       ]
     };
 
@@ -116,7 +116,7 @@ export default class MenuBuilder {
     ];
   }
 
-  buildDefaultTemplate() {
+  buildDefaultTemplate () {
     const templateDefault = [{
       label: '&File',
       submenu: [{
@@ -160,22 +160,22 @@ export default class MenuBuilder {
       label: 'Help',
       submenu: [{
         label: 'Learn More',
-        click() {
+        click () {
           shell.openExternal('http://electron.atom.io');
         }
       }, {
         label: 'Documentation',
-        click() {
+        click () {
           shell.openExternal('https://github.com/atom/electron/tree/master/docs#readme');
         }
       }, {
         label: 'Community Discussions',
-        click() {
+        click () {
           shell.openExternal('https://discuss.atom.io/c/electron');
         }
       }, {
         label: 'Search Issues',
-        click() {
+        click () {
           shell.openExternal('https://github.com/atom/electron/issues');
         }
       }]

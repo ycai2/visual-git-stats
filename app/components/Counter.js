@@ -12,7 +12,7 @@ class Counter extends Component {
     counter: number
   };
 
-  render() {
+  render () {
     const { increment, incrementIfOdd, incrementAsync, decrement, counter } = this.props;
     return (
       <div>

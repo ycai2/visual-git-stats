@@ -6,7 +6,7 @@ import { ConnectedRouter } from 'react-router-redux';
 import CounterPage from '../../app/containers/CounterPage';
 import { configureStore } from '../../app/store/configureStore';
 
-function setup(initialState) {
+function setup (initialState) {
   const store = configureStore(initialState);
   const history = createBrowserHistory();
   const app = mount(

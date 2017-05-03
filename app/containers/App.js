@@ -7,7 +7,7 @@ export default class App extends Component {
     children: Children
   };
 
-  render() {
+  render () {
     return (
       <div>
         {this.props.children}

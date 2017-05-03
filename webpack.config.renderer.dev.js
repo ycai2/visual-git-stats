@@ -237,15 +237,15 @@ export default merge.smart(baseConfig, {
       verbose: true,
       disableDotRule: false,
     },
-    setup() {
+    setup () {
       if (process.env.START_HOT) {
         spawn(
           'npm',
           ['run', 'start-hot-renderer'],
           { shell: true, env: process.env, stdio: 'inherit' }
         )
-        .on('close', code => process.exit(code))
-        .on('error', spawnError => console.error(spawnError));
+        .on('close', (code) => process.exit(code))
+        .on('error', (spawnError) => console.error(spawnError));
       }
     }
   },

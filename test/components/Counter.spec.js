@@ -5,7 +5,7 @@ import { BrowserRouter as Router } from 'react-router-dom';
 import renderer from 'react-test-renderer';
 import Counter from '../../app/components/Counter';
 
-function setup() {
+function setup () {
   const actions = {
     increment: spy(),
     incrementIfOdd: spy(),
