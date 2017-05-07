@@ -6,17 +6,15 @@
 
 [![Build Status][travis-image]][travis-url]
 [![Github Tag][github-tag-image]][github-tag-url]
-[![OpenCollective](https://opencollective.com/electron-react-boilerplate/backers/badge.svg)](#backers)
-[![OpenCollective](https://opencollective.com/electron-react-boilerplate/sponsors/badge.svg)](#sponsors)
 
-[![React](/img/react-padded-90.png)](https://facebook.github.io/react/)
-[![Webpack](/img/webpack-padded-90.png)](https://webpack.github.io/)
-[![Redux](/img/redux-padded-90.png)](http://redux.js.org/)
-[![React Router](/img/react-router-padded-90.png)](https://github.com/ReactTraining/react-router)
-[![Flow](/img/flow-padded-90.png)](https://flowtype.org/)
-[![ESLint](/img/eslint-padded-90.png)](http://eslint.org/)
-[![Jest](/img/jest-padded-90.png)](https://facebook.github.io/jest/)
-[![Yarn](/img/yarn-padded-90.png)](https://yarnpkg.com/)
+[![React](/internals/img/react-padded-90.png)](https://facebook.github.io/react/)
+[![Webpack](/internals/img/webpack-padded-90.png)](https://webpack.github.io/)
+[![Redux](/internals/img/redux-padded-90.png)](http://redux.js.org/)
+[![React Router](/internals/img/react-router-padded-90.png)](https://github.com/ReactTraining/react-router)
+[![Flow](/internals/img/flow-padded-90.png)](https://flowtype.org/)
+[![ESLint](/internals/img/eslint-padded-90.png)](http://eslint.org/)
+[![Jest](/internals/img/jest-padded-90.png)](https://facebook.github.io/jest/)
+[![Yarn](/internals/img/yarn-padded-90.png)](https://yarnpkg.com/)
 
 **Note**: this project is based off [electron-react-boilerplate](https://github.com/https://github.com/chentsulin/electron-react-boilerplate) project. This README is also modified from the boilerplate README but will be changed as I develop the project.
 
